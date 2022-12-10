@@ -5,7 +5,7 @@ const More = ({ page_no, offset }) => {
         <div>
           <button>
               <a
-                 href={`http://localhost:3000/?page_no=${ page_no }&offset=${ offset }`}
+                 href={`/?page_no=${ page_no }&offset=${ offset }`}
               >
                   More
               </a>    

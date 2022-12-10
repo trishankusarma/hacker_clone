@@ -5,7 +5,7 @@ import styled from '@mui/material/styles/styled';
 import Box from '@mui/system/Box';
 import Button from '@mui/material/Button';
 
-const NewsList = ({ _offset , isSearchPage }) => {
+const NewsList = ({ _offset , isSearchPage , page_no }) => {
 
   const news = useSelector((state) => state.news)
 
@@ -35,7 +35,7 @@ const NewsList = ({ _offset , isSearchPage }) => {
           }
           {
             <Box>
-                <Button variant={"contained"} size="small">1</Button> of <Button>{news?.total_pages} pages</Button>
+                <Button variant={"contained"} size="small">{page_no+1}</Button> of <Button>{news?.total_pages} pages</Button>
             </Box>
           }
     </Div>

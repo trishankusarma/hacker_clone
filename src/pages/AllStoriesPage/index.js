@@ -44,7 +44,7 @@ const Home = () => {
             < Header />
         </div>
         <div>
-             < NewsList _offset={page_info.offset}/>
+             < NewsList _offset={page_info.offset} page_no={page_info.page_no}/>
              < More page_no={page_info?.page_no+1} offset = {(page_info?.page_no+1)*30} />
         </div>  
         < div >
