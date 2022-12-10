@@ -1,0 +1,51 @@
+.container{
+    background-color :#edf4fd;
+    padding : 1rem
+  }
+  
+  .container .wrapper{
+   
+    display: flex;
+  
+  }
+  .container .wrapper .num{
+    padding-left: 8px;
+    padding-bottom: 8px;
+    padding-top: 0;
+    color:#828282;
+    font-size: 14pt;
+    line-height: 14pt;
+  }
+  
+  .container .wrapper .check{
+    padding-left: 8px;
+    padding-right: 3px;
+    padding-bottom: 8px;
+    padding-top: 0;
+    font-size: 11pt;
+    line-height: 14pt;
+  }
+  
+  .container .wrapper .title{
+    word-break: break-word;
+    font-size: 11pt;
+    line-height: 14pt;
+  }
+  .container .points_container{
+      display: flex; 
+      color: #828282;
+      font-size: 9pt;
+  }
+  
+  .container .points_container .points_space{
+    
+    padding-left: 8px;
+    padding-right: 3px;
+    padding-bottom: 8px;
+    
+  }
+
+  .container .rectify{
+    padding-top:0.2rem;
+    margin-left:-8px;
+  }
