@@ -22,7 +22,7 @@ export const fetchNews = (queries) => {
 
     console.log( "query string" , query_string )
 
-    let res = await axios.get(`http://hn.algolia.com/api/v1/search_by_date?${query_string}`);
+    let res = await axios.get(`https://hn.algolia.com/api/v1/search_by_date?${query_string}`);
     console.log( res )
 
     if( res.status === 200 ){
