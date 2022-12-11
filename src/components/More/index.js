@@ -1,15 +1,16 @@
 import React from 'react'
+import { Button } from '@mui/material'
 
 const More = ({ page_no, offset }) => {
   return (
         <div>
-          <button>
+          <Button>
               <a
                  href={`/?page_no=${ page_no }&offset=${ offset }`}
               >
                   More
               </a>    
-          </button>
+          </Button>
        </div>
   )
 }

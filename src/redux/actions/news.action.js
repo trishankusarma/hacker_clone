@@ -1,4 +1,5 @@
 import axios from "axios"
+import { Toastify } from "../../pages/App.js";
 
 const getQueryString = async (queries)=>{
    
@@ -35,19 +36,24 @@ export const fetchNews = (queries) => {
             total_hits : res.data.nbHits
         }
       });
+
+      Toastify("success", "Data Loaded Successfully!!");
     } else {
- 
+     
       dispatch({
         type: "error_occured",
         payload: {
             error : res.data.message
         }
       });
+
+      Toastify("error", "Something Went Wrong!!");
     }
       
     } catch (error) {
 
       console.log(error)
+      Toastify("error", "Some Unexpected Error Occured!!");
       dispatch({
         type: "error_occured",
         payload: {
