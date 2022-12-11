@@ -73,6 +73,7 @@ const Home = () => {
     return async () => {
       await fetchData({ ...tags , ...currentState })
     }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
 

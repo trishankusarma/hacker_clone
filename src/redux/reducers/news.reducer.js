@@ -5,7 +5,7 @@ const initialState = {
     total_hits : 0
 };
 
-export default (state = initialState, { type , payload })=>{
+const news_reducer = (state = initialState, { type , payload })=>{
   switch (type) {
 
     case "new_page_load":
@@ -29,3 +29,5 @@ export default (state = initialState, { type , payload })=>{
 
   return state;
 };
+
+export default news_reducer

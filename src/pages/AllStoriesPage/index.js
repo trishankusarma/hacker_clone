@@ -36,6 +36,8 @@ const Home = () => {
     return async () => {
         await fetchData( page_no ? parseInt( page_no ) : 0 )
     }
+
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
