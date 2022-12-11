@@ -53,11 +53,11 @@ export const fetchNews = (queries) => {
     } catch (error) {
 
       console.log(error)
-      Toastify("error", "Some Unexpected Error Occured!!");
+      Toastify("error", error.message);
       dispatch({
         type: "error_occured",
         payload: {
-            error : "Some Unexpected Error Occured!!"
+            error : error.message
         }
       });
     }
