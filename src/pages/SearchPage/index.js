@@ -101,6 +101,7 @@ const Home = () => {
              < NewsList
                  _offset={ tags.offset } 
                  isSearchPage = {true}
+                 page_no={tags.page_no}
              />
         </div>  
         < div >
