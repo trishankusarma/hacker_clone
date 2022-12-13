@@ -35,8 +35,8 @@ const App = () => {
       hideProgressBar={true}
     />
     <Routes>
-      <Route exact path="/" element={<AllStoriesPage />} />
-      <Route exact path="/search_page" element={<SearchPage />} />
+      <Route path="/" exact element={<AllStoriesPage />} />
+      <Route path="/search_page" exact element={<SearchPage />} />
     </Routes>
   </Router>
   )

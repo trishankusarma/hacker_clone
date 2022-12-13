@@ -14,6 +14,7 @@ const getQueryString = async (queries)=>{
 }
 
 export const fetchNews = (queries) => {
+
   return async (dispatch) => {
     try {
     //  let res = await axios().post("/cashBook/add_to_cashBook", data);
@@ -23,7 +24,7 @@ export const fetchNews = (queries) => {
 
     console.log( "query string" , query_string )
 
-    let res = await axios.get(`http://hn.algolia.com/api/v1/search_by_date?${query_string}`);
+    let res = await axios.get(`https://hn.algolia.com/api/v1/search_by_date?${query_string}`);
     console.log( res )
 
     if( res.status === 200 ){
@@ -48,8 +49,7 @@ export const fetchNews = (queries) => {
       });
 
       Toastify("error", "Something Went Wrong!!");
-    }
-      
+    }      
     } catch (error) {
 
       console.log(error)

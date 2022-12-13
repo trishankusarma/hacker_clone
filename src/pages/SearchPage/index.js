@@ -68,12 +68,10 @@ const Home = () => {
     }))
   } 
 
-  useEffect(() => {
+  useEffect( async() => {
     
-    return async () => {
-      await fetchData({ ...tags , ...currentState })
-    }
-     // eslint-disable-next-line react-hooks/exhaustive-deps
+    await fetchData({ ...tags , ...currentState })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
 
