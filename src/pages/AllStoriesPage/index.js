@@ -24,7 +24,7 @@ const Home = () => {
     }))
   } 
 
-  useEffect( async () => {
+  useEffect(() => {
 
     const { page_no , offset } =  queryString.parse(window.location.search)
 
@@ -33,8 +33,8 @@ const Home = () => {
           offset : offset ? parseInt( offset ) : 0
     })
     
-    await fetchData( page_no ? parseInt( page_no ) : 0 )
-
+    fetchData( page_no ? parseInt( page_no ) : 0 )
+    
      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
